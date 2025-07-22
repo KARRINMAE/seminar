@@ -3,30 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>[Your Name] | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <title>Maria Reyes | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background: linear-gradient(135deg, #ffc0cb, #800080);
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #f8c6e5, #b28ddc);
       color: #fff;
     }
 
     header {
       text-align: center;
-      padding: 80px 20px 40px;
+      padding: 100px 20px 60px;
     }
 
     header h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 48px;
+      font-family: 'Playfair Display', serif;
+      font-size: 52px;
       margin: 0;
     }
 
     header p {
-      font-size: 20px;
-      margin-top: 10px;
+      font-size: 22px;
+      margin-top: 12px;
     }
 
     section {
@@ -39,14 +39,15 @@
       text-align: center;
       font-size: 36px;
       margin-bottom: 40px;
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Playfair Display', serif;
     }
 
-    .about, .education, .skills, .contact {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 15px;
+    .box {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
       padding: 30px;
       margin-bottom: 40px;
+      backdrop-filter: blur(5px);
     }
 
     .projects {
@@ -58,10 +59,15 @@
 
     .project-card {
       background: rgba(255, 255, 255, 0.1);
-      border-radius: 12px;
+      border-radius: 16px;
       width: 280px;
       padding: 20px;
       text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
     }
 
     .project-card img {
@@ -69,45 +75,51 @@
       border-radius: 10px;
     }
 
-    .skills ul {
+    ul.skills-list {
       list-style: none;
       padding: 0;
-      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
     }
 
-    .skills li {
-      margin: 10px 0;
+    ul.skills-list li {
+      background: #ffb6c1;
+      color: #800080;
+      padding: 10px 20px;
+      border-radius: 20px;
       font-weight: bold;
     }
 
-    .contact form {
+    form {
       display: flex;
       flex-direction: column;
       gap: 15px;
     }
 
-    .contact input, .contact textarea {
-      padding: 10px;
+    input, textarea {
+      padding: 12px;
       border: none;
-      border-radius: 5px;
+      border-radius: 8px;
       font-size: 16px;
     }
 
-    .contact button {
-      background-color: #ff69b4;
+    button {
+      background-color: #d774c2;
       color: white;
       border: none;
       padding: 12px;
       font-size: 18px;
-      border-radius: 5px;
+      border-radius: 8px;
       cursor: pointer;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 30px;
       font-size: 14px;
-      background: rgba(0, 0, 0, 0.2);
+      background: rgba(0, 0, 0, 0.15);
     }
 
     @media (max-width: 768px) {
@@ -121,60 +133,62 @@
 <body>
 
   <header>
-    <h1>[Your Full Name]</h1>
-    <p>Graduate of Mindanao State University | Creative Professional</p>
+    <h1>Maria Reyes</h1>
+    <p>BS Information Technology | Mindanao State University</p>
   </header>
 
-  <section class="about">
+  <section class="box">
     <h2>About Me</h2>
-    <p>I’m a graduate of Mindanao State University with a degree in [Your Course]. I am passionate about [Your Interests/Field] and love working on creative and impactful projects that inspire people and solve real problems.</p>
+    <p>Hello! I'm Maria, a passionate tech enthusiast and design lover from Mindanao State University. I enjoy creating beautiful and functional websites, and I love turning creative ideas into real digital experiences.</p>
   </section>
 
-  <section class="education">
+  <section class="box">
     <h2>Education</h2>
-    <p><strong>Mindanao State University</strong> — [Your Degree]</p>
-    <p>Graduated: [Year]</p>
+    <p><strong>Mindanao State University</strong></p>
+    <p>Bachelor of Science in Information Technology</p>
+    <p>Graduated: 2025</p>
   </section>
 
-  <section class="projects">
+  <section class="box">
     <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/280x160" alt="Project 1">
+        <h3>Personal Portfolio Website</h3>
+        <p>Designed and built a responsive personal portfolio using HTML, CSS, and JavaScript.</p>
+      </div>
 
-    <div class="project-card">
-      <img src="https://via.placeholder.com/280x150" alt="Project 1" />
-      <h3>Project Title</h3>
-      <p>Short description of the project. Tools used, goal, and outcome.</p>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/280x160" alt="Project 2">
+        <h3>E-commerce UI Design</h3>
+        <p>Created a sleek Figma UI prototype for a trendy fashion store app.</p>
+      </div>
     </div>
-
-    <div class="project-card">
-      <img src="https://via.placeholder.com/280x150" alt="Project 2" />
-      <h3>Another Project</h3>
-      <p>Description of another awesome project. You can link it if hosted.</p>
-    </div>
-
   </section>
 
-  <section class="skills">
+  <section class="box">
     <h2>Skills</h2>
-    <ul>
-      <li>🌸 Graphic Design</li>
-      <li>💻 Web Development</li>
-      <li>📢 Communication</li>
-      <li>🧠 Problem Solving</li>
+    <ul class="skills-list">
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>UI/UX Design</li>
+      <li>Figma</li>
+      <li>Responsive Design</li>
     </ul>
   </section>
 
-  <section class="contact">
+  <section class="box">
     <h2>Contact Me</h2>
     <form>
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
-      <textarea rows="4" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
     </form>
   </section>
 
   <footer>
-    &copy; 2025 [Your Name] | Designed with 💖 in pink & purple
+    © 2025 Maria Reyes | Built with 💖 from MSU
   </footer>
 
 </body>
